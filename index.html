@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024, initial-scale=1.0">
+    <title>Bookbuddies – Share Books & Voice Notes</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fafbff; margin:0; color: #222;}
+        .header {
+            text-align: center;
+            background: #fff;
+            padding: 2em 1em 1.5em 1em;
+            box-shadow: 0 2px 8px #e0e7ef50;
+        }
+        .header img {
+            width: 128px;
+            height: 128px;
+            margin-bottom: 0.5em;
+        }
+        .title {
+            font-size: 2.5em;
+            letter-spacing: .04em;
+            margin: 0.2em 0 0.3em 0;
+            color: #1e3657;
+        }
+        .subtitle {
+            color: #32598d;
+            font-size: 1.14em;
+            margin-bottom: 0;
+        }
+        .description {
+            font-size: 1.15em;
+            color: #47556d;
+            max-width: 520px;
+            margin: 1.2em auto 0.5em auto;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 2em;
+            flex-wrap: wrap;
+            margin: 2.5em 0 3em 0;
+        }
+        .gallery img {
+            width: 260px;
+            height: 520px;
+            background: #e8ecf2;
+            border-radius: 18px;
+            object-fit: cover;
+            box-shadow: 0 3px 12px #d0d6e350;
+            border: 1px solid #ecedf8;
+        }
+        @media (max-width: 1000px) {
+            .gallery img {
+                width: 180px;
+                height: 340px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="PATH_TO_YOUR_LOGO/bookbuddies_1024.png" alt="Bookbuddies Logo">
+        <div class="title">Bookbuddies</div>
+        <div class="subtitle">Share your favorite reads — with voice notes to bring stories to life!</div>
+        <div class="description">
+            Bookbuddies is the fun and easy way to share the books you love with friends. Swap your latest reads, exchange voice notes to discuss plot twists, and grow your reading community — all in one place.
+        </div>
+    </div>
+    <div class="gallery">
+        <img src="screenshot1.png" alt="Bookbuddies screenshot 1">
+        <img src="screenshot2.png" alt="Bookbuddies screenshot 2">
+        <img src="screenshot3.png" alt="Bookbuddies screenshot 3">
+    </div>
+</body>
+</html>
