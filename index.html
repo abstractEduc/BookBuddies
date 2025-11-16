@@ -1,77 +1,115 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1024, initial-scale=1.0">
     <title>Bookbuddies – Share Books & Voice Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800;600;400&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; background: #fafbff; margin:0; color: #222;}
+        body {
+            font-family: 'Nunito', Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f8ff 0%, #e2e6f8 100%);
+            margin: 0;
+            color: #232b38;
+        }
+        .container {
+            max-width: 940px;
+            margin: 0 auto;
+            background: #ffffffcc;
+            border-radius: 40px;
+            padding: 2.5em 2em 3.5em 2em;
+            margin-top: 2.5em;
+            box-shadow: 0 10px 36px 0 #bcd2ffa0;
+        }
         .header {
             text-align: center;
-            background: #fff;
-            padding: 2em 1em 1.5em 1em;
-            box-shadow: 0 2px 8px #e0e7ef50;
+        }
+        .logo-circle {
+            background: linear-gradient(145deg, #fcfffd 50%, #f3edff 100%);
+            border-radius: 50%;
+            display: inline-block;
+            box-shadow: 0 4px 28px rgba(119,130,255,0.12);
+            margin-bottom: 2em;
+            padding: 1em;
         }
         .header img {
-            width: 128px;
-            height: 128px;
-            margin-bottom: 0.5em;
+            width: 106px;
+            height: 106px;
+            display: block;
+            margin: 0 auto;
         }
         .title {
-            font-size: 2.5em;
-            letter-spacing: .04em;
-            margin: 0.2em 0 0.3em 0;
-            color: #1e3657;
+            font-size: 2.7em;
+            font-weight: 800;
+            letter-spacing: 0.04em;
+            margin: 0.4em 0 0.1em 0;
+            color: #5561fc;
+            text-shadow: 0 3px 20px #d7e2fff0;
         }
         .subtitle {
-            color: #32598d;
-            font-size: 1.14em;
-            margin-bottom: 0;
+            color: #5b6cb1;
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
         }
         .description {
-            font-size: 1.15em;
-            color: #47556d;
-            max-width: 520px;
-            margin: 1.2em auto 0.5em auto;
+            font-size: 1.2em;
+            color: #435369;
+            max-width: 540px;
+            margin: 1em auto 2.4em auto;
+            line-height: 1.6;
+        }
+        .gallery-title {
+            text-align: center;
+            margin: 2.4em 0 1em 0;
+            font-size: 1.35em;
+            font-weight: 600;
+            color: #5a62d6;
+            letter-spacing: .02em;
         }
         .gallery {
             display: flex;
             justify-content: center;
             gap: 2em;
             flex-wrap: wrap;
-            margin: 2.5em 0 3em 0;
         }
         .gallery img {
-            width: 260px;
-            height: 520px;
-            background: #e8ecf2;
-            border-radius: 18px;
+            width: 240px;
+            height: 500px;
+            background: linear-gradient(120deg,#e9e7fd 20%, #f9f6ff 80%);
+            border-radius: 24px;
             object-fit: cover;
-            box-shadow: 0 3px 12px #d0d6e350;
-            border: 1px solid #ecedf8;
+            box-shadow: 0 3px 36px #bfc6e870, 0 1.5px 7px #e6eafd60;
+            border: 0;
+            transition: transform .19s cubic-bezier(.39,1.21,.69,1);
         }
-        @media (max-width: 1000px) {
-            .gallery img {
-                width: 180px;
-                height: 340px;
-            }
+        .gallery img:hover {
+            transform: scale(1.04) translateY(-4px) rotate(-3deg);
+            box-shadow: 0 7px 40px #b8bed1;
+        }
+        @media (max-width: 900px) {
+            .gallery img { width: 140px; height: 290px; }
+            .container { padding: 1em 0.4em 2em 0.4em; }
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <img src="PATH_TO_YOUR_LOGO/bookbuddies_1024.png" alt="Bookbuddies Logo">
-        <div class="title">Bookbuddies</div>
-        <div class="subtitle">Share your favorite reads — with voice notes to bring stories to life!</div>
-        <div class="description">
-            Bookbuddies is the fun and easy way to share the books you love with friends. Swap your latest reads, exchange voice notes to discuss plot twists, and grow your reading community — all in one place.
+    <div class="container">
+        <div class="header">
+            <span class="logo-circle">
+                <img src="PATH_TO_YOUR_LOGO/bookbuddies_1024.png" alt="Bookbuddies Logo">
+            </span>
+            <div class="title">Bookbuddies</div>
+            <div class="subtitle">Share your favorite books & leave voice notes for friends!</div>
+            <div class="description">
+                Bookbuddies lets you easily exchange your reading adventures. Send book recommendations, track your reading-list, and leave voice notes for your friends—blending words and voices to grow your book-loving circle.
+            </div>
         </div>
-    </div>
-    <div class="gallery">
-        <img src="screenshot1.png" alt="Bookbuddies screenshot 1">
-        <img src="screenshot2.png" alt="Bookbuddies screenshot 2">
-        <img src="screenshot3.png" alt="Bookbuddies screenshot 3">
+        <div class="gallery-title">App Gallery</div>
+        <div class="gallery">
+            <img src="screenshot1.png" alt="Bookbuddies screenshot 1">
+            <img src="screenshot2.png" alt="Bookbuddies screenshot 2">
+            <img src="screenshot3.png" alt="Bookbuddies screenshot 3">
+        </div>
     </div>
 </body>
 </html>
